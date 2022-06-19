@@ -9,14 +9,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api")
 public class IndexController {
 
-    @GetMapping("/v1/greet")
-    public ResponseEntity<?> greeting(){
-        return ResponseEntity.ok("Request success !");
-    }
+  @GetMapping("/v1/greet")
+  public ResponseEntity<?> greeting() {
+    return ResponseEntity.ok("Request success !");
+  }
 
-    @GetMapping("/v2/greet")
-    public ResponseEntity<?> greetingV2(){
-    
-	return ResponseEntity.ok("Request v2 success !");
-    }
+  @GetMapping("/v2/greet")
+  public ResponseEntity<?> greetingV2() {
+    return ResponseEntity.ok("Request v2 success !");
+  }
 }
